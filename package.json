@@ -1,0 +1,50 @@
+{
+  "name": "egg-psyduck-mybatis",
+  "version": "1.0.0",
+  "description": "Egg plugin for mybatis",
+  "author": "姜彦汐 <https://www.undsky.com>",
+  "license": "MIT",
+  "eggPlugin": {
+    "name": "mybatis"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "mybatis",
+    "sql"
+  ],
+  "dependencies": {
+    "html-parse-stringify": "^3.0.1",
+    "sqlstring": "^2.3.3"
+  },
+  "devDependencies": {
+    "egg": "^3",
+    "egg-bin": "^5",
+    "egg-ci": "^2",
+    "egg-mock": "^5",
+    "eslint": "^8",
+    "eslint-config-egg": "^12"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov"
+  },
+  "files": [
+    "app.js",
+    "agent.js",
+    "index.js",
+    "config",
+    "app",
+    "lib"
+  ],
+  "ci": {
+    "version": "16, 18"
+  }
+}
