@@ -1,6 +1,6 @@
 {
   "name": "egg-psyduck-mybatis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Egg plugin for mybatis",
   "author": "姜彦汐 <https://www.undsky.com>",
   "license": "MIT",
