@@ -1,11 +1,11 @@
-# egg-psyduck-mybatis
+# ruoyi-eggjs-mybatis
 
 > Egg plugin for mybatis
 
 ## 安装
 
 ```bash
-$ npm i egg-psyduck-mybatis --save
+$ npm i ruoyi-eggjs-mybatis --save
 ```
 
 ## 支持的 egg 版本
@@ -20,7 +20,7 @@ $ npm i egg-psyduck-mybatis --save
 // {app_root}/config/plugin.js
 exports.mybatis = {
   enable: true,
-  package: "egg-psyduck-mybatis",
+  package: "ruoyi-eggjs-mybatis",
 };
 ```
 

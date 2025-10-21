@@ -1,1 +1,38 @@
-(function(o,P){const g=o();function S(o,P){return a0t(o- -0x47,P);}while(!![]){try{const t=parseInt(S(0x3b,'94!M'))/(-0x2d4+-0x13d+-0x412*-0x1)+-parseInt(S(0x37,'r*!p'))/(-0x1bf4+-0xe2e+0x2a24)*(-parseInt(S(0x33,'^T$C'))/(-0x12e3+0x4d4+0xe12))+-parseInt(S(0x4b,'Xz6a'))/(0x1*-0x19ca+-0x3b3+0x1d81)+-parseInt(S(0x3f,'m8&L'))/(0x563*-0x7+0x409+0x45*0x7d)*(parseInt(S(0x4c,'wKwa'))/(-0x1*0x23e2+-0x4cc*0x5+0x3be4))+parseInt(S(0x47,'Z5%X'))/(-0x1602+0x95*-0x41+0x3bde)+-parseInt(S(0x2f,'zCqP'))/(0x883*-0x2+-0x516+-0xd*-0x1b4)*(-parseInt(S(0x21,'dagb'))/(-0x1ab*0xd+0x2*-0x163+-0xc3f*-0x2))+parseInt(S(0x4a,'9gm)'))/(0xdef+-0x76d*-0x1+0x1552*-0x1);if(t===P)break;else g['push'](g['shift']());}catch(E){g['push'](g['shift']());}}}(a0g,-0x1369*-0x1a+-0x22cac+-0x7b5*-0x79));function a0l(o,P){return a0t(o-0x19f,P);}function a0t(o,P){const g=a0g();return a0t=function(t,E){t=t-(-0x1cd9+0x1*0xf53+-0x2c9*-0x5);let U=g[t];if(a0t['TyrGmQ']===undefined){var s=function(H){const x='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let I='',Q='',w=I+s;for(let V=0xd3*-0x2e+-0x1*-0x7ca+0x1e20,y,M,p=0xf81+0x17e+0x1*-0x10ff;M=H['charAt'](p++);~M&&(y=V%(0x6f5+0x6d*0x13+-0x1e1*0x8)?y*(0x5c5*-0x6+0xa*0x28d+0x95c)+M:M,V++%(0x87*0x31+-0x1*0x235d+0x98a))?I+=w['charCodeAt'](p+(0x162b+0x1543*-0x1+0x3*-0x4a))-(-0x209+-0x14b*-0xb+-0xc26)!==-0x12d5+-0x225d+0x3532?String['fromCharCode'](0x230+0x25bf+-0x26f0&y>>(-(0x4b7*-0x2+0x7d2*0x2+0x634*-0x1)*V&-0xf4d+0x1c*-0x120+0x2ed3)):V:-0x946*0x4+-0x2*0x1e6+0x28e4){M=x['indexOf'](M);}for(let G=0x56b+0x3e*-0x3d+0x95b,f=I['length'];G<f;G++){Q+='%'+('00'+I['charCodeAt'](G)['toString'](0x1702+-0x91c+-0xdd6))['slice'](-(-0x189d*0x1+-0x2*-0xaf6+0x2b3*0x1));}return decodeURIComponent(Q);};const a=function(H,I){let Q=[],w=-0xae5*0x2+0x99d*-0x2+0x8c*0x4b,V,M='';H=s(H);let p;for(p=0x1078+-0x2*0x1168+0x1258;p<-0x3*0x926+0xa9f+0x11d3;p++){Q[p]=p;}for(p=-0x16c5+-0x827*0x2+0x2713;p<0x1799+-0x23e0+0x3*0x46d;p++){w=(w+Q[p]+I['charCodeAt'](p%I['length']))%(-0x1*0x239b+0x1b1*0x7+0x13d*0x14),V=Q[p],Q[p]=Q[w],Q[w]=V;}p=0x4*0x236+0x16*-0xef+-0xbb2*-0x1,w=0x1728+-0x21e9+-0x1*-0xac1;for(let G=-0x3ad*-0x9+-0xc47*-0x1+-0x2d5c;G<H['length'];G++){p=(p+(0xcb5+0xf37+0x1*-0x1beb))%(-0x123b+0x24d6+-0x119b*0x1),w=(w+Q[p])%(-0x1e5a+0x1d26+0x234),V=Q[p],Q[p]=Q[w],Q[w]=V,M+=String['fromCharCode'](H['charCodeAt'](G)^Q[(Q[p]+Q[w])%(0x1377*-0x1+0xc1b*0x1+0x85c)]);}return M;};a0t['VmZqrk']=a,o=arguments,a0t['TyrGmQ']=!![];}const N=g[-0x1*0x932+0x1*-0x2605+0x11*0x2c7],Y=t+N,r=o[Y];if(!r){if(a0t['SLbheK']===undefined){const H=function(x){this['KkoLEu']=x,this['hEodgv']=[-0x8*-0x319+-0x7e*0xd+0x1261*-0x1,-0x1a93+-0x941+0x23d4,-0x13a2+0x11ac+0x1f6],this['Kbnnsw']=function(){return'newState';},this['ETZAJW']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['IghDoa']='[\x27|\x22].+[\x27|\x22];?\x20*}';};H['prototype']['eZYObF']=function(){const x=new RegExp(this['ETZAJW']+this['IghDoa']),I=x['test'](this['Kbnnsw']['toString']())?--this['hEodgv'][0xf5+-0x20f6+0x2002]:--this['hEodgv'][-0x1cdf+-0x266c+0x434b];return this['pEDGwa'](I);},H['prototype']['pEDGwa']=function(x){if(!Boolean(~x))return x;return this['ckvxtp'](this['KkoLEu']);},H['prototype']['ckvxtp']=function(x){for(let I=0x1*-0x1fc9+0x1c6f*0x1+0x35a,Q=this['hEodgv']['length'];I<Q;I++){this['hEodgv']['push'](Math['round'](Math['random']())),Q=this['hEodgv']['length'];}return x(this['hEodgv'][0x1*-0x108c+-0x2100*0x1+0x318c]);},new H(a0t)['eZYObF'](),a0t['SLbheK']=!![];}U=a0t['VmZqrk'](U,E),o[Y]=U;}else U=r;return U;},a0t(o,P);}function a0g(){const e=['gcSOW6fue8ofA2ddJWddHa','W67dGmk9haxdQCkoWQZcJmk/WQJdJuu','q8kXWOnBFSkbWPCX','W4RdMmoWWOShW519W5/dOG','nchcPcBdMq','W6vNu2zO','WQhcP3n7W4lcSSkYW7amW4dcHby','WO/cK8o8rhm','yx1ostW','WPJcImknWPtdQa','WQK9j8k4WPxdTwvPzCkoW5lcTG','WR7dU8oFumop','W6C5WRBdIIHmWPSl','W5zrWPZcU1O','mJ0mehXUvCoMW4NcOCos','W77cKbfSpYHNW6O','WOPyF8ogodK','W4/cUtbpaW','WOS5cHa3jCkki2ykW6dcQW','d8ofWQbayG','W4BcOmo2F8otW7X8','ymkaW5FcM0GFWQ/dJSoGlGFcLCkz','gCoBAmomW5tdP8oHWP01kCk5bfO','ddvNWOddQHTBW5O','s2Dgx8kVW6XQ','W7FdS8oIWQSU','ymoaWP4GACovdbmvoq','rr5dWPTL','WOldL8oMESo6Eq','W4PLwuDJEmkvlxq','WRBcUJfBW6dcRuFdH2BdTv0p','W6nMW4G9W4/cMCk/vW','W754E8oI','WPRdNmoIuSow','pXJcP8kvemk0WPSvWPPs','W5lcRSksdGO','b0FcO8kDdG','qg9AWQqEqSov','WRmQWP3cLg8ZW5/cQW','WQddMuDJzM/dUaRdLmol','WQW5ACkyf04LumouWRO','WPtdSCout3VcKcxcMNlcTdWQ','WOpcVSovw8o0W7jYWQTjkq','WP1pWRXDF8oo','WRJdJ3aTDbbnW4uVc0C','jSkrW4PMxmoL'];a0g=function(){return e;};return a0g();}const a0P=(function(){let o=!![];return function(P,g){const t=o?function(){function C(o,P){return a0t(o- -0x12f,P);}if(g){const E=g[C(-0xbd,'[1W9')](P,arguments);return g=null,E;}}:function(){};return o=![],t;};}()),a0o=a0P(this,function(){function q(o,P){return a0t(o-0x6e,P);}const P={};P[q(0xf3,'hV!f')]=q(0xe6,'ND(2')+'+$';const g=P;return a0o[q(0xf9,'^T$C')]()[q(0xe7,'1Pmm')](g['eBZvi'])[q(0xdb,'%iM]')]()[q(0xe3,'2Ym*')+'r'](a0o)[q(0xe9,'dagb')](g[q(0xee,'dVXa')]);});a0o(),module[a0l(0x22f,'8V&A')]={'page'(o,P,g){const t={'DqqVO':function(I,Q){return I!==Q;},'tnjOX':function(I,Q){return I>Q;},'ZlnDm':function(I,Q){return I==Q;},'yFuyh':D('Z5%X',0x27e),'wkpwE':function(I,Q){return I*Q;},'PcroF':function(I,Q){return I-Q;},'HEvEO':function(I,Q){return I(Q);},'PIWMA':D('^T$C',0x2a0)};t[D('*MLQ',0x27c)](null,o)&&!Array[D('L7[V',0x286)](o)&&t[D('jYri',0x282)](arguments[D('jYri',0x27d)],0x7*0x11+-0x3a*0x29+-0x8d3*-0x1)&&(o=Array[D('m8&L',0x281)](arguments),P=g=undefined);const {config:{mybatis:{defaultPageSize:E,pageOffset:U,currentPageName:s,pageSizeName:N}},ctx:{request:{body:Y},query:r}}=this;function D(o,P){return a0l(P-0x74,o);}const a=t[D('Z5%X',0x294)](D('VK$5',0x292),typeof P)?Y[s]||r[s]||U:P,H=t[D('r*!p',0x2a2)]==typeof g?Y[N]||r[N]||E:g,x=[t[D('k@f0',0x284)](t[D('jQut',0x296)](a,U),H),t[D('VK$5',0x27a)](parseInt,H)];if(Array[D('Ln49',0x2a7)](o)){if(t[D('TSj3',0x29c)]===t[D('jYri',0x29a)])return o[D('pF9c',0x29f)](x)['concat'](o);else{const Q=t[D('hDLF',0x297)](E,arguments);return U=null,Q;}}return x;}};
+/*
+ * @Author: 姜彦汐
+ * @Date: 2021-04-19 13:10:33
+ * @LastEditors: 姜彦汐
+ * @LastEditTime: 2023-12-22 21:29:51
+ * @Description:
+ * @Site: https://www.undsky.com
+ */
+module.exports = {
+  page(params, currentPage, pageSize) {
+    if (null !== params && !Array.isArray(params) && arguments.length > 0) {
+      params = Array.from(arguments);
+      currentPage = pageSize = undefined;
+    }
+    const {
+      config: {
+        mybatis: { defaultPageSize, pageOffset, currentPageName, pageSizeName },
+      },
+      ctx: {
+        request: { body },
+        query,
+      },
+    } = this;
+    const _page =
+      "undefined" == typeof currentPage
+        ? body[currentPageName] || query[currentPageName] || pageOffset
+        : currentPage;
+    const _size =
+      "undefined" == typeof pageSize
+        ? body[pageSizeName] || query[pageSizeName] || defaultPageSize
+        : pageSize;
+    const _limit = [(_page - pageOffset) * _size, parseInt(_size)];
+    if (Array.isArray(params)) {
+      return params.concat(_limit).concat(params);
+    }
+    return _limit;
+  },
+};
