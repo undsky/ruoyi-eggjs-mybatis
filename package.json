@@ -4,6 +4,14 @@
   "description": "Egg plugin for mybatis",
   "author": "姜彦汐 <https://www.undsky.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undsky/ruoyi-eggjs-mybatis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/undsky/ruoyi-eggjs-mybatis/issues"
+  },
+  "homepage": "https://github.com/undsky/ruoyi-eggjs-mybatis#readme",
   "eggPlugin": {
     "name": "mybatis"
   },
