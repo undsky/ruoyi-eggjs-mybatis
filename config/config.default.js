@@ -13,7 +13,7 @@ module.exports = (appInfo) => ({
     mapperPath: path.join(appInfo.baseDir, "mapper"),
     defaultPageSize: 10, // 默认分页条数
     pageOffset: 1, // 分页偏移量
-    currentPageName: "currentPage",
+    currentPageName: "pageNum",
     pageSizeName: "pageSize",
   },
 });
