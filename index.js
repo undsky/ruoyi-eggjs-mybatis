@@ -121,14 +121,14 @@ MybatisMapper.prototype.getStatement = function (namespace, sql, param) {
       param.params = {};
     }
     
-    // 确保必需的属性存在
-    if (!param.params.hasOwnProperty('beginTime')) {
+    // 确保必需的属性存在且不为 undefined 或 null
+    if (param.params.beginTime === undefined || param.params.beginTime === null) {
       param.params.beginTime = '';
     }
-    if (!param.params.hasOwnProperty('endTime')) {
+    if (param.params.endTime === undefined || param.params.endTime === null) {
       param.params.endTime = '';
     }
-    if (!param.params.hasOwnProperty('dataScope')) {
+    if (param.params.dataScope === undefined || param.params.dataScope === null) {
       param.params.dataScope = '';
     }
   }
