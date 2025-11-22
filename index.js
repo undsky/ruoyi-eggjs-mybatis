@@ -55,6 +55,9 @@ findMapper = function (children) {
 }
 
 replaceCdata = function (rawText) {
+  // 先移除 XML 注释，避免影响解析
+  rawText = rawText.replace(/<!--[\s\S]*?-->/g, '');
+  
   var cdataRegex = new RegExp('(<!\\[CDATA\\[)([\\s\\S]*?)(\\]\\]>)', 'g');
   var matches = rawText.match(cdataRegex);
 
@@ -107,7 +110,27 @@ MybatisMapper.prototype.getStatement = function (namespace, sql, param) {
         }
       }
     }
+    
     param = convertedParam;
+  }
+
+  // 确保 params 对象存在并包含必需属性
+  if (param && typeof param === 'object') {
+    // 如果 params 不存在或不是对象，创建它
+    if (!param.params || typeof param.params !== 'object') {
+      param.params = {};
+    }
+    
+    // 确保必需的属性存在
+    if (!param.params.hasOwnProperty('beginTime')) {
+      param.params.beginTime = '';
+    }
+    if (!param.params.hasOwnProperty('endTime')) {
+      param.params.endTime = '';
+    }
+    if (!param.params.hasOwnProperty('dataScope')) {
+      param.params.dataScope = '';
+    }
   }
 
   try {
