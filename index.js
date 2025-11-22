@@ -78,12 +78,37 @@ replaceCdata = function (rawText) {
 
 MybatisMapper.prototype.getStatement = function (namespace, sql, param) {
   var statement = '';
+  
 
   // Parameter Check
   if (namespace == null) throw new Error('Namespace should not be null.');
   if (myBatisMapper[namespace] == undefined) throw new Error('Namespace [' + namespace + '] not exists.');
   if (sql == null) throw new Error('SQL ID should not be null.');
   if (myBatisMapper[namespace][sql] == undefined) throw new Error('SQL ID [' + sql + '] not exists');
+
+  // 转换 params[key] 格式的参数为 params.key
+  if (param && typeof param === 'object') {
+    var convertedParam = {};
+    for (var key in param) {
+      if (param.hasOwnProperty(key)) {
+        // 匹配 params[xxx] 格式
+        var match = key.match(/^(\w+)\[(\w+)\]$/);
+        if (match) {
+          var parentKey = match[1];  // params
+          var childKey = match[2];   // xxx
+          
+          // 创建嵌套对象
+          if (!convertedParam[parentKey]) {
+            convertedParam[parentKey] = {};
+          }
+          convertedParam[parentKey][childKey] = param[key];
+        } else {
+          convertedParam[key] = param[key];
+        }
+      }
+    }
+    param = convertedParam;
+  }
 
   try {
     for (var i = 0, children; children = myBatisMapper[namespace][sql][i]; i++) {
