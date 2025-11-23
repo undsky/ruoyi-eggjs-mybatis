@@ -92,54 +92,54 @@ MybatisMapper.prototype.getStatement = function (namespace, sql, param) {
   // 转换 params[key] 格式的参数为 params.key
   if (param && typeof param === 'object') {
     var convertedParam = {};
+    
+    // 只处理匹配 params[xxx] 格式的属性
     for (var key in param) {
       if (param.hasOwnProperty(key)) {
-        // 匹配 params[xxx] 格式
         var match = key.match(/^(\w+)\[(\w+)\]$/);
         if (match) {
           var parentKey = match[1];  // params
           var childKey = match[2];   // xxx
           
-          // 创建或获取嵌套对象
+          // 创建嵌套对象
           if (!convertedParam[parentKey]) {
             convertedParam[parentKey] = {};
           }
           convertedParam[parentKey][childKey] = param[key];
-        } else {
-          // 处理普通键
-          if (convertedParam[key] && typeof convertedParam[key] === 'object' && typeof param[key] === 'object') {
-            // 如果 convertedParam[key] 已经存在（可能是之前通过 params[xxx] 创建的），需要合并
-            for (var subKey in param[key]) {
-              if (param[key].hasOwnProperty(subKey)) {
-                convertedParam[key][subKey] = param[key][subKey];
-              }
-            }
-          } else {
-            convertedParam[key] = param[key];
-          }
+          
+          // 删除原始的 params[xxx] 格式键
+          delete param[key];
         }
       }
     }
     
-    param = convertedParam;
-  }
+    // 深度合并 convertedParam 到 param
+    for (var key in convertedParam) {
+      if (convertedParam.hasOwnProperty(key)) {
+        if (param[key] && typeof param[key] === 'object' && typeof convertedParam[key] === 'object') {
+          // 深度合并对象属性
+          for (var subKey in convertedParam[key]) {
+            if (convertedParam[key].hasOwnProperty(subKey)) {
+              param[key][subKey] = convertedParam[key][subKey];
+            }
+          }
+        } else {
+          param[key] = convertedParam[key];
+        }
+      }
+    }
 
-  // 确保 params 对象存在并包含必需属性
-  if (param && typeof param === 'object') {
-    // 如果 params 不存在或不是对象，创建它
-    if (!param.params || typeof param.params !== 'object') {
-      param.params = {};
-    }
-    
-    // 确保必需的属性存在且不为 undefined 或 null
-    if (param.params.beginTime === undefined || param.params.beginTime === null) {
-      param.params.beginTime = '';
-    }
-    if (param.params.endTime === undefined || param.params.endTime === null) {
-      param.params.endTime = '';
-    }
-    if (param.params.dataScope === undefined || param.params.dataScope === null) {
-      param.params.dataScope = '';
+    if(param.params && typeof param.params === 'object') {
+      // 确保必需的属性存在且不为 undefined 或 null
+      if (param.params.beginTime === undefined || param.params.beginTime === null) {
+        param.params.beginTime = '';
+      }
+      if (param.params.endTime === undefined || param.params.endTime === null) {
+        param.params.endTime = '';
+      }
+      if (param.params.dataScope === undefined || param.params.dataScope === null) {
+        param.params.dataScope = '';
+      }
     }
   }
 
