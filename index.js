@@ -100,13 +100,23 @@ MybatisMapper.prototype.getStatement = function (namespace, sql, param) {
           var parentKey = match[1];  // params
           var childKey = match[2];   // xxx
           
-          // 创建嵌套对象
+          // 创建或获取嵌套对象
           if (!convertedParam[parentKey]) {
             convertedParam[parentKey] = {};
           }
           convertedParam[parentKey][childKey] = param[key];
         } else {
-          convertedParam[key] = param[key];
+          // 处理普通键
+          if (convertedParam[key] && typeof convertedParam[key] === 'object' && typeof param[key] === 'object') {
+            // 如果 convertedParam[key] 已经存在（可能是之前通过 params[xxx] 创建的），需要合并
+            for (var subKey in param[key]) {
+              if (param[key].hasOwnProperty(subKey)) {
+                convertedParam[key][subKey] = param[key][subKey];
+              }
+            }
+          } else {
+            convertedParam[key] = param[key];
+          }
         }
       }
     }
